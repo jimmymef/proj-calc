@@ -4,3 +4,8 @@ def get_fractions(valor : 'string') -> 'float':
     return decimal
   else:
     return float(valor)    
+
+def suma(a : 'num_racional',b: 'num_racional') -> 'suma_de_racionales':
+  sumando_a = get_fractions(a)
+  sumando_b = get_fractions(b)
+  return sumando_a + sumando_b
