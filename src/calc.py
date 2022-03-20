@@ -9,3 +9,8 @@ def suma(a : 'num_racional',b: 'num_racional') -> 'suma_de_racionales':
   sumando_a = get_fractions(a)
   sumando_b = get_fractions(b)
   return sumando_a + sumando_b
+
+def multiplica(a : 'num_racional',b: 'num_racional')->'multiplicaion_de_racionales':
+  multiplicando = get_fractions(a)
+  multiplicador = get_fractions(b)
+  return multiplicando * multiplicador
