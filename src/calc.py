@@ -12,8 +12,12 @@ def get_fractions(valor: 'string') -> 'float':
         El valor de la fracción en decimales.
 
     """
-    if("/" in valor):
-        decimal = int(valor[0:1]) / int(valor[2:3])
+
+    if type(valor) == int: return(valor)
+    elif type(valor) == float: return(valor)
+    elif("/" in valor):
+        (a, b) = valor.split("/")
+        decimal = int(a) / int(b)
         return decimal
     else:
         return float(valor)
